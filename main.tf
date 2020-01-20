@@ -12,6 +12,7 @@ resource "aws_security_group" "web-dmz" {
   vpc_id      = var.vpc_id
 }
 
+/*
 resource "aws_security_group_rule" "allow_ssh" {
   type        = "ingress"
   from_port   = 22
@@ -21,6 +22,7 @@ resource "aws_security_group_rule" "allow_ssh" {
 
   security_group_id = aws_security_group.web-dmz.id
 }
+*/
 
 resource "aws_security_group_rule" "allow_http" {
   type        = "ingress"
