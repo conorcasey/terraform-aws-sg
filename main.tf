@@ -12,7 +12,7 @@ resource "aws_security_group" "web-dmz" {
   vpc_id      = var.vpc_id
 }
 
-/*
+/* Temporarily removing this configuration to demonstrate module versioining in Exercise 2 Lesson 2
 resource "aws_security_group_rule" "allow_ssh" {
   type        = "ingress"
   from_port   = 22
